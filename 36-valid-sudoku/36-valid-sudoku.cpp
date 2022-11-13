@@ -10,7 +10,6 @@ public:
             if (board[i][j]=='.')
                 continue;
              int curr=board[i][j]-'0';
-            // if(horizontal[i].count(curr)  || vertical[i].count(curr) || box[(i/3)*3+j/3].count(curr))
              if (horizontal[i].count(curr) || vertical[j].count(curr) || box[(i/3)*3+j/3].count(curr)) 
                     return false;
              horizontal[i].insert(curr);
